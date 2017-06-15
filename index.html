@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cardenal Lite</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/Thirdparty/CryptoJS-SHA256.js"></script>
+    <script type="text/javascript" src="./js/Cardenal/CardenalDebug.js"></script>
+    <script type="text/javascript" src="./js/Cardenal/CardenalFileSystem.js"></script>
+    <script type="text/javascript" src="./js/Cardenal/CardenalCipher.js"></script>
+    <script type="text/javascript" src="./js/CardenalLite.js"></script>
+    <script type="text/javascript" src="./js/Gui.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="upload-form-container">
+            <div id="upload-form">
+                <label>Select files to encrypt/decrypt</label><br>
+                <input type="file" multiple="multiple" name="upload-file" id="upload-file">
+                <input type="text" id="encryption-key" placeholder="Encryption password">
+                <button id="upload-button">Select & Crypt/Decrypt</button>
+            </div>
+            <ul id="encryption-queue"></ul>
+        </div>
+    </div>
+</body>
+</html>

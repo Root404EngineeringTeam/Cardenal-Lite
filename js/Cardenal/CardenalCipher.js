@@ -125,7 +125,7 @@ CardenalCipher.process = function(action, file, key, callbacks) {
       CardenalCipher.loaded = 0;
       CardenalCipher.onprogress = callbacks.onprogress;
 
-      if(action == 'crypt') {
+      if(action == 'encrypt') {
          CardenalCipher.file_name = file.name + '.crypted';
          CardenalDebug.info('Encrypting ' + CardenalCipher.file_name);
       } else {
