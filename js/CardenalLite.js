@@ -10,7 +10,11 @@ var CardenalLite = function() {
           }
 
         , onprogress: function(p) {
-            console.log(p);
+            console.log('%' + p);
+        }
+
+        , started: function(f) {
+            console.log(f + ' cryption has been started...');
         }
     };
 };
