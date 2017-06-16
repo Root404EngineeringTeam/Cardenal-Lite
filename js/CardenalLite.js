@@ -27,6 +27,8 @@ CardenalLite.prototype.processQueue = function() {
 
         CardenalDebug.info('Processing ' + this.fileQueue[0].name);
 
+        cardenal.callbacks.started(this.fileQueue[0].name);
+
         CardenalCipher.process(action, this.fileQueue[0], this.key, {
             done: function(obj, name, url) {
                 cardenal.processQueue();
@@ -38,6 +40,8 @@ CardenalLite.prototype.processQueue = function() {
         });
 
         cardenal.fileQueue.shift();
+    } else {
+        cardenal.callbacks.onfinished();
     };
 };
 

@@ -2,6 +2,7 @@
 var CardenalDebug = function() {}
 
 CardenalDebug.htmlConsole = false;
+CardenalDebug.enable = false;
 CardenalDebug.logs = [];
 
 // si hay un elemento en el DOM con id "cardenal-html-console", a este se logeara
@@ -35,6 +36,8 @@ CardenalDebug.clearHtmlConsole = function() {
 
 // log de logs :vvvvv
 CardenalDebug.log = function(err, type) {
+   if(!CardenalDebug.enable) return;
+   
    console.log(err);
 
    if(!CardenalDebug.htmlConsole) return;

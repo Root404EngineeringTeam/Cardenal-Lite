@@ -1,3 +1,110 @@
+* {
+	box-sizing: content-box !important;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+   	font-size: 14px;
+}
+
+body {
+	background-color: #000;
+	color: #02dfdf;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+a {
+    color: #02dfdf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.label {
+	font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#cardenal-logo-wrap {
+	margin: 50px;
+}
+
 #upload-file {
     display: none;
+}
+
+#upload-form {
+	margin-top: 50px;
+}
+
+#upload-form, #encryption-queue, #encryption-queue-label, #about {
+	width: 100%;
+	max-width: 500px;
+}
+
+#encryption-queue {
+	text-align: left;
+	padding: 10px;
+	list-style: none;
+}
+
+#encryption-queue-wrap {
+    height: 100px;
+    overflow: hidden;
+}
+
+#encryption-key {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 50px;
+	margin-top: 10px;
+	border: none;
+	background-color: #000;
+	border-bottom: 3px solid transparent;
+	color: #02dfdf;
+	outline: none;
+	transition-duration: 0.5s;
+}
+
+#encryption-key:hover {
+	border-bottom: 3px solid #02dfdf;
+}
+
+#encryption-queue-label {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+#upload-button {
+	width: 100%;
+	border: 2px solid #02dfdf;
+	color: #02dfdf;
+	border-radius: 6px;
+	padding: 15px;
+	background-color: #000;
+	transition-duration: 0.5s;
+	outline: none;
+}
+
+#upload-button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+#progress-bar {
+	width: 0%;
+	height: 10px;
+	background-color: #02dfdf;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition-duration: 0.5s;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #02dfdf;
+  opacity: 0.5;
 }

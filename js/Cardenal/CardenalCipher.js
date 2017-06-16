@@ -81,7 +81,6 @@ CardenalCipher.proccessQueue = function() {
       CardenalCipher.read(CardenalCipher.queue[0]);
    } else {
       // el proceso finalizo
-      console.log(CardenalCipher.file_name);
       CardenalFileSystem.readFile(CardenalCipher.file_name, CardenalCipher.done);      
       clearInterval(CardenalCipher.timer);
    }
@@ -92,7 +91,6 @@ CardenalCipher.process = function(action, file, key, callbacks) {
    var parts = [];
    var part_counter = 0;
    var part_size = 10485760; // Bloques de 10Mb
-   console.log(key);
 
    // Se arman los inicios-finales de los bloques
    while(true) {
