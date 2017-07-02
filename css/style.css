@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 * {
 	box-sizing: content-box !important;
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
    	font-size: 14px;
 }
 
@@ -107,4 +109,13 @@ a:hover {
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #02dfdf;
   opacity: 0.5;
+}
+
+hr {
+    border: 1px solid #02dfdf;
+}
+
+.info-url {
+    cursor: pointer;
+    color: #FFF;
 }

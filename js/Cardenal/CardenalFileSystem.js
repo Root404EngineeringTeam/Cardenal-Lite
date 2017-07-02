@@ -1,6 +1,10 @@
 // para el filesystem, http://www.html5rocks.com/en/tutorials/file/filesystem/
 window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
 
+if (typeof window.requestFileSystem == 'undefined') {
+    window.location = "sorry.html";
+}
+
 // Clase para manejar el filesystem
 var CardenalFileSystem = function() {}
 
